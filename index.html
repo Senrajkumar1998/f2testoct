@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Catalog</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Explore</a></li>
+                    <li><a href="#" class="nav-link">Help</a></li>
+                    <li class="profile">
+                        <input type="file" id="profilePictureInput" accept="image/*" style="display: none;">
+                        <label for="profilePictureInput" class="profile-picture-label">
+                            <img src="./images/profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carousel -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="./images/recipe1.png" alt="Carousel Image 1">
+                <div class="carousel-text">
+                    <h3>Trending Now</h3>
+                    <h1>Mike's famous salad with cheese</h1>
+                    <p>By Raju sen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search bar below the carousel -->
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Search recipes...">
+    </div>
+
+    <div class="filter-container">
+        <div class="type-filter">
+            <button id="showAll">Show All</button>
+            <button id="showVeg">Show Only Veg</button>
+            <button id="showNonVeg">Show Only Non-Veg</button>
+        </div>
+    </div>
+
+    <aside id="sidebar">
+        <h3>Filters</h3>
+        <label>
+            <input type="radio" name="ratingFilter" value="4above" checked>
+            4 and above
+        </label>
+        <label>
+            <input type="radio" name="ratingFilter" value="below4">
+            Below 4
+        </label>
+    </aside>
+
+    
+    <main id="recipeContainer">
+        <!-- Recipe cards will be dynamically added here -->
+    </main>
+    <aside id="mobileDrawer">
+        <!-- Mobile drawer content -->
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>

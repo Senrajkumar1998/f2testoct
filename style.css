@@ -1,0 +1,210 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Navigation bar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw; /* Set width to 100% of viewport width */
+}
+
+.logo {
+    flex: 1; /* Logo aligned to the left */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end; /* Align items to the right */
+}
+
+/* Profile picture styles */
+.profile-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+/* Style the profile picture input label */
+.profile-picture-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: #007bff;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/* Carousel styles */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+.carousel-slide {
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.carousel-slide img {
+    height: 350px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.carousel-text {
+    color:#fff;
+    padding: 20px;
+    padding-left: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Align text to the left and in the center */
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.carousel-text h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+.carousel-text author {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.carousel-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #dc582a;
+}
+
+/* Search bar styles */
+.search {
+    width: 250px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.filter-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Sidebar styles */
+#sidebar {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    margin: 20px auto;
+}
+
+#sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#sidebar label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Recipe card styles */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recipe-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.recipe-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.like-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* Mobile drawer styles (add more as needed) */
+#mobileDrawer {
+    /* ... (mobile drawer styles) ... */
+}
+
