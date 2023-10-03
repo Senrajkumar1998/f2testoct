@@ -116,9 +116,15 @@ nav ul {
 
 /* Search bar styles */
 .search {
-    width: 250px;
+    /* width: 250px;
     margin: 20px auto;
-    text-align: center;
+    text-align: center; */
+    width: 1,264px;
+height: 42px;
+top: 564px;
+left: 88px;
+justify: space-between;
+
 }
 
 input[type="text"] {
@@ -131,6 +137,9 @@ input[type="text"] {
 }
 
 .filter-container button {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: start;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -138,7 +147,38 @@ input[type="text"] {
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 16px; 
+    width: Hug (750.4px);
+height: Hug (86px);
+top: 656px;
+left: 88px;
+gap: 20px;
+
+
+}
+#showAll{
+    width: 236.8px;
+    height: 86px;
+    padding: 30px, 29.8px, 30px, 29px;
+    border-radius: 10px;
+    background: rgba(234, 170, 0, 1);
+}
+#showNonVeg{
+    width: 236.8px;
+    height: 86px;
+    padding: 30px, 29.8px, 30px, 29px;
+    border-radius: 10px;
+    background: rgba(220, 88, 42, 1);
+
+}
+#showVeg{
+    width: 236.8px;
+    height: 86px;
+    padding: 30px, 29.8px, 30px, 29px;
+    border-radius: 10px;
+    background: rgba(196, 214, 0, 1);
+
+
 }
 
 /* Sidebar styles */
@@ -148,6 +188,12 @@ input[type="text"] {
     padding: 20px;
     width: 250px;
     margin: 20px auto;
+    width: Fixed (284px);
+    height: Hug (210px);
+    top: 792px;
+    left: 88px;
+    gap: 15px;
+
 }
 
 #sidebar h3 {
@@ -163,7 +209,8 @@ input[type="text"] {
 
 /* Recipe card styles */
 .main-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
@@ -174,8 +221,8 @@ input[type="text"] {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 20px;
-    width: calc(33.33% - 20px);
+    padding: 10px;
+    width: 300px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
